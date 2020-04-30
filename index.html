@@ -15,11 +15,6 @@ var separ9 = " p.";
  var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.italics() + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result12").value + separ9;
  document.getElementById("result16").value = concat;
  }
- if (document.form.chapitre.checked == true) {
- document.getElementById("result16").focus();
- var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.italics() + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result7").value + separ + separ3 + document.getElementById("result13").value;
- document.getElementById("result16").value = concat;
- }
  if (document.form.article.checked == true) {
  document.getElementById("result16").focus();
  var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + separ8 + document.getElementById("result8").value + separ8 + separ2 + document.getElementById("result4").value.italics() + separ + separ4 + document.getElementById("result11").value + separ + document.getElementById("result9").value + separ2 + separ3 + document.getElementById("result13").value;
@@ -51,22 +46,6 @@ this.form.result7.style.display='none';
  this.form.result11.style.display='none';
  this.form.result12.style.display='inline';
  this.form.result13.style.display='none';
- this.form.result14.style.display='none';
- this.form.result15.style.display='none';
- }
- return true;" id="livre" />Livre <input name="typedoc" type="radio" value="Chapitre" onclick="
- if (this.checked) {
- this.form.result3.style.display='inline';
- this.form.result4.style.display='none';
- this.form.result5.style.display='none';
- this.form.result6.style.display='inline'; 
-this.form.result7.style.display='inline';
- this.form.result8.style.display='none';
- this.form.result9.style.display='inline';
- this.form.result10.style.display='none';
- this.form.result11.style.display='none';
- this.form.result12.style.display='none';
- this.form.result13.style.display='inline';
  this.form.result14.style.display='none';
  this.form.result15.style.display='none';
  }
@@ -114,11 +93,6 @@ this.form.result7.style.display='inline';
 <td style="padding-top:5px;"><input size="18" value="Titre du p&eacute;riodique" title="Par exemple Science &amp; vie junior, Wapiti..." id="result4" /></td>
 <td style="padding-top:5px;"><input size="18" value="Nom du site web" id="result5" /></td>
 <td style="padding-top:5px;"><input size="18" value="&Eacute;diteur" title="Se trouve sur la couverture ou dans les premi&egrave;res pages du livre." id="result6" /></td>
-</tr>
-<tr>
-<td style="padding-top:5px;"><input size="18" value="Titre du chapitre" id="result7" /></td>
-<td style="padding-top:5px;"><input size="18" value="Titre de l'article" id="result8" /></td>
-<td style="padding-top:5px;"><input size="18" value="Date de publication" title="Se trouve dans les premi&egrave;res ou derni&egrave;res pages du livre, sous la mention 'D&eacute;p&ocirc;t l&eacute;gal'." id="result9" /></td>
 </tr>
 <tr>
 <td style="padding-top:5px;"><input size="18" value="Date de consultation" title="Date exacte du jour comme '16/12/2012'." id="result10" /></td>
